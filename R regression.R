@@ -2,6 +2,7 @@
 library(ggthemes)
 library(ggplot2)
 library(extrafont)
+library(grid)
 
 # Import and read csv files. Extract close prices from SP500 and APPLE and save them into a new dataframe.
 SP500 <- read.csv('/Your/File/Name/R/SP500.csv')
