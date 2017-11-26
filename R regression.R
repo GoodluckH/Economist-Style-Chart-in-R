@@ -50,9 +50,13 @@ theme(plot.title = element_text(family = 'Avenir Next Condensed',size=18,margin=
 p<-p+geom_segment(aes(x=0,xend=0,y=-Inf,yend=0.1975),color='#e5001f',lwd=0.4)+
   geom_segment(aes(x=0,xend=0,y=-0.1975,yend=0.1975),color='#e5001f',lwd=1.1)
 
+# Preview
+p
+grid.rect(x=0.026, y=0.9,hjust = 1,vjust=0,gp=gpar(fill='#e5001c',lwd=0))# Add the iconic Economist red rectangle to the graph!
+
+
 # Save the graph to designated file path. 
 svg('/Your/File/Name/your.svg',width = 6, height = 5)
 p
-# Add the iconic Economist red rectangle to the graph!
-grid.rect(x=0.02, y=0.9,hjust = 1,vjust=0,gp=gpar(fill='#e5001c',lwd=0))
+grid.rect(x=0.026, y=0.9,hjust = 1,vjust=0,gp=gpar(fill='#e5001c',lwd=0))
 dev.off()
